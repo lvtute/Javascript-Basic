@@ -74,3 +74,17 @@ calcAge: ƒ ()
 age: 30
 __proto__: Object */
 ```
+
+### 1. DOM pig game
+**Game rules:**
+- The game has 2 players, playing in rounds
+- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
+- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
+- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
+- The first player to reach 100 points on GLOBAL score wins the game
+
+**Game UI**
+
+![image](https://user-images.githubusercontent.com/16172615/74597441-31d96700-5092-11ea-8f6b-17f278d9bc72.png)
+**Techniques used:**
+- `document.querySelector('#current-' + activePlayer).textContent = dice;`
