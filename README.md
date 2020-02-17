@@ -1,5 +1,5 @@
 # Javascript-Basic
-This is my workspace for learning basic javascript.
+This is my workspace for learning basic javascript by following the instruction from an Udemy course.
 
 
 ## Important notes
@@ -87,4 +87,5 @@ __proto__: Object */
 
 ![image](https://user-images.githubusercontent.com/16172615/74597441-31d96700-5092-11ea-8f6b-17f278d9bc72.png)
 **Techniques used:**
-- `document.querySelector('#current-' + activePlayer).textContent = dice;`
+- Select HTML element and put in some text content:
+`document.querySelector('#current-' + activePlayer).textContent = dice;`
