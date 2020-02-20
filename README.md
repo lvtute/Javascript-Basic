@@ -92,7 +92,9 @@ _**Closures summary**_
 - An inner function has always access to the variables and parameters of its outer function, even after the outer function has returned.
 
 ---
-
+_**ES6**_
+- **var** keyword defines function variables
+- **let** keyword defines block variables
 
 ___
 ---
