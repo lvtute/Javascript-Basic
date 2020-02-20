@@ -10,7 +10,7 @@ This is my workspace for learning basic javascript by following the instruction 
     23 === '23';
     // false
 ```
-
+---
 ```javascript
     var test1 = null;
     console.log(test1);
@@ -28,7 +28,7 @@ This is my workspace for learning basic javascript by following the instruction 
     if(test2){ console.log("true");} else {console.log("false");}
     //false
 ```
-
+---
 ```javascript
     var array = ['John','Smith',1990, 'teacher', false];
     // (5) ["John", "Smith", 1990, "teacher", false]
@@ -45,7 +45,7 @@ This is my workspace for learning basic javascript by following the instruction 
     array.shift();
     // ["John", "Smith", 1990, "teacher", false]
 ```
-
+___
 ```javascript
 
 var john = {
@@ -74,7 +74,29 @@ calcAge: ƒ ()
 age: 30
 __proto__: Object */
 ```
+___
+_**Summary about object prototype**_
+- Every Javascript object has a **prototype property**, which makes inheritance possible in Javascript;
+- The prototype property of an object is where we put methods and properties that we  want **other objects to inherit**; 
+- The Constructor's prototype property is **NOT** the prototype of the Constructor itself, it's the prototype of **ALL** instances that are created through it;
+- When a certain method (or property) is called, the search starts in the object itself, and if it can not be found, the search moves on to the object's prototype. This continues until the method is found: **prototype chain**. 
+___
+_**Some facts about functions**_
+- A function is an instance of object type;
+- A function behaves like any other objects;
+- We can store function in a variable;
+- We can pass a function as an argument to another function;
+- We can return a function from a function.
+---
+_**Closures summary**_
+- An inner function has always access to the variables and parameters of its outer function, even after the outer function has returned.
 
+---
+
+
+___
+---
+___
 ### 1. DOM pig game
 **Game rules:**
 - The game has 2 players, playing in rounds
@@ -89,3 +111,13 @@ __proto__: Object */
 **Techniques used:**
 - Select HTML element and put in some text content:
 `document.querySelector('#current-' + activePlayer).textContent = dice;`
+
+### 2. Advanced javascript with examples
+**Lectures:**
+- Function constructor;
+- Object.create;
+- Passing function as argument;
+- Function returns function;
+- IIFE;
+- Closures
+- Bind, call and apply
